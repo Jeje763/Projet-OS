@@ -31,10 +31,23 @@ def move(a,b,i):
         return change(a,b,i)
     else:
         return enleve(a,i)
+    
+def est_un_prefixe(a,b):
+    """ Renvoie true si a est un préfixe de b , i.e b petit^n fils de a"""
+    if a=="0":
+        return True
+    else:
+        la,lb=len(a),len(b)
+        if lb<la:
+            return False
+        else:
+            for k in range(la):
+                if a[k]!=b[k]:
+                    return False
+            return True
 #%%
-a="1,2,3,4"
-b="5,6,7,8"
-print(move(a,b,2))
+a="0"
+b="1,4,3"
+print(est_un_prefixe(a,b))
 
-print(move(a,"0",2))
 #%%

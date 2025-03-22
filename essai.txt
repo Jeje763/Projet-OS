@@ -1,0 +1,4 @@
+Ceci est un fihcier txt.
+Il contient plusieurs lignes.
+
+Et un total de 18 mots et plusieurs caractères.
